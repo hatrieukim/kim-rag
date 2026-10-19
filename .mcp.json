@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "lifelog": {
+      "command": "uv",
+      "args": ["run", "lifelog", "mcp"]
+    }
+  }
+}

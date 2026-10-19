@@ -1,0 +1,7 @@
+// Copy to Local.xcconfig (ignored by git) and fill in.
+
+DEVELOPMENT_TEAM = ABCDE12345
+KIMRAG_SERVER = https:/$()/your-mac.your-tailnet.ts.net
+
+// Used by ops/ios-renew.sh only: the iPhone to reinstall the app on (xcrun devicectl list devices).
+IPHONE_UDID = 00000000-0000000000000000

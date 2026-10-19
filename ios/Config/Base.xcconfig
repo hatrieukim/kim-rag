@@ -1,0 +1,11 @@
+// Shared build settings for both targets. Personal values (your Apple team, your server) go in
+// Local.xcconfig next to this file, which git ignores. Copy Local.xcconfig.example to start.
+
+// Your Apple Developer team id (Xcode > Settings > Accounts). A free Personal Team works.
+DEVELOPMENT_TEAM =
+
+// The kim-rag server the app uploads to, shown as the default in the app's settings.
+// xcconfig treats "//" as a comment, so write the URL as https:/$()/host.
+KIMRAG_SERVER =
+
+#include? "Local.xcconfig"

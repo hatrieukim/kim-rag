@@ -1,0 +1,37 @@
+# Secrets and personal settings: never commit these.
+.env
+.env.*
+!.env.example
+ios/Config/Local.xcconfig
+*.mobileprovision
+*.p12
+*.cer
+
+# Your own data: recordings, transcripts, journals, logs, databases. It stays on your machine.
+data/
+*.zdb
+*.zl.zip
+*.sqlite
+*.sqlite3
+*.db
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Node
+node_modules/
+
+# Editors, OS, local tool state
+.DS_Store
+.idea/
+.vscode/
+.claude/worktrees/
+.claude/settings.local.json

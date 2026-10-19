@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "kim-rag Reading Log",
+  "version": "1.0",
+  "description": "Ghi trang đã đọc trên Chrome và gửi về server kim-rag trong máy (Sản phẩm 7).",
+  "incognito": "not_allowed",
+  "permissions": ["storage", "alarms"],
+  "host_permissions": ["http://127.0.0.1/*", "http://localhost/*"],
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["vendor/Readability.js", "scrub.js", "content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ],
+  "options_ui": { "page": "options.html", "open_in_tab": false }
+}

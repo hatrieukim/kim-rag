@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  The kim-rag HTTP intake (`lifelog serve`, listening on 127.0.0.1:8000), always on: starts at login and
+  launchd restarts it when it dies. The Mac recorder sends its events here.
+  Install: ops/install-agent.sh com.kim.lifelog.api
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kim.lifelog.api</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>__UV__</string>
+        <string>run</string>
+        <string>--directory</string>
+        <string>__REPO__</string>
+        <string>lifelog</string>
+        <string>serve</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>__REPO__</string>
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:__UV_DIR__</string>
+    </dict>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <true/>
+    <key>ThrottleInterval</key>
+    <integer>30</integer>
+    <key>StandardOutPath</key>
+    <string>__REPO__/data/logs/api.log</string>
+    <key>StandardErrorPath</key>
+    <string>__REPO__/data/logs/api.log</string>
+</dict>
+</plist>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Keeps the kim iPhone app (product 5) signed: every 30 minutes, renew it once fewer than 2 days are left on its
+  free 7-day profile. Install: ops/install-agent.sh com.kim.kimrag.ios-renew
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kim.kimrag.ios-renew</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>__REPO__/ops/ios-renew.sh</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>1800</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>__REPO__/data/logs/ios-renew.log</string>
+    <key>StandardErrorPath</key>
+    <string>__REPO__/data/logs/ios-renew.log</string>
+</dict>
+</plist>

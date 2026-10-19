@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Zalo sensor (product 10). Starts at login; launchd restarts it when it crashes or the network is down,
+  but not when it stops on purpose (no Zalo session yet, session expired). Installed by zalo/install.sh,
+  which fills in __NODE__ and __REPO__ (see ops/install-agent.sh).
+-->
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kim.kimrag.zalo</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>__NODE__</string>
+        <string>__REPO__/zalo/sensor.js</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>__REPO__/zalo</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <dict>
+        <key>SuccessfulExit</key>
+        <false/>
+    </dict>
+    <key>ThrottleInterval</key>
+    <integer>120</integer>
+    <key>ProcessType</key>
+    <string>Background</string>
+    <key>StandardOutPath</key>
+    <string>__REPO__/data/logs/zalo.log</string>
+    <key>StandardErrorPath</key>
+    <string>__REPO__/data/logs/zalo.log</string>
+</dict>
+</plist>

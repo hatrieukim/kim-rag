@@ -1,0 +1,16 @@
+{
+  "name": "kim-rag-zalo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Listens to Zalo messages with zca-js and sends them to the kim-rag server (product 10).",
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node sensor.js",
+    "login": "node sensor.js --login",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "zca-js": "2.2.0"
+  }
+}

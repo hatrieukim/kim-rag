@@ -1,0 +1,40 @@
+# Only the two data stores run in Docker. The worker runs directly on macOS so it can use Apple silicon.
+services:
+  postgres:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: lifelog
+      POSTGRES_PASSWORD: lifelog
+      POSTGRES_DB: lifelog
+    ports:
+      # Bound to this machine only. Port 54329 so it does not clash with a Postgres already on 5432.
+      - "127.0.0.1:54329:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U lifelog -d lifelog"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+  # Graphiti's graph store (product 2). Rebuildable from Postgres: delete the volume, then `lifelog reprocess --from ingest --all`.
+  falkordb:
+    # Pinned to 4.x: version 6 (the latest tag since 2026-10-08) changed how indexes are created; Graphiti 0.30 does not support it yet.
+    image: falkordb/falkordb:v4.22.0
+    ports:
+      # Bound to this machine only. 63790 is the data port, 3001 the graph browser UI.
+      - "127.0.0.1:63790:6379"
+      - "127.0.0.1:3001:3000"
+    volumes:
+      - falkordata:/var/lib/falkordb/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  falkordata:

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>KimRagServer</key>
+	<string>$(KIMRAG_SERVER)</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>audio</string>
+		<string>location</string>
+	</array>
+	<key>NSSupportsLiveActivities</key>
+	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>kim records your day so you can search what was said later. Audio goes only to your own server.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>kim notes roughly where each recording was made.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>kim notes roughly where each recording was made, and resumes recording after the system closes it.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>kim notes whether you were walking, driving or still during each recording.</string>
+</dict>
+</plist>

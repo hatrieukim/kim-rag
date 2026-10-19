@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6382D7D514DFB3B766EA5AC6 /* KimRagWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 34A12B4316E0C7804F2E247E /* KimRagWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B78CC6909042016DAAA04D83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD7512F5E0289CDDCE66B0F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 090470DEBBEDF60952B5EEB7;
+			remoteInfo = KimRagWidget;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3060E4059448A7D9FCC5FAD0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6382D7D514DFB3B766EA5AC6 /* KimRagWidget.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		56276DD632C62329F6ADA69E /* KimRagRecorder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KimRagRecorder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		34A12B4316E0C7804F2E247E /* KimRagWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KimRagWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0F1A2B3C4D5E6F708192A3B /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4133148486FD3F88917196CC /* KimRagRecorder */ = {isa = PBXFileSystemSynchronizedRootGroup; path = KimRagRecorder; sourceTree = "<group>"; };
+		62073C66595723C3FB02BE22 /* KimRagWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; path = KimRagWidget; sourceTree = "<group>"; };
+		5946ABB114403A2E5563F52C /* Shared */ = {isa = PBXFileSystemSynchronizedRootGroup; path = Shared; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2985118D9DA11F5994ACC150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D113CC477AFF6A2E38181A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186495F7DA296BF880DF3A22 = {
+			isa = PBXGroup;
+			children = (
+				4133148486FD3F88917196CC /* KimRagRecorder */,
+				62073C66595723C3FB02BE22 /* KimRagWidget */,
+				5946ABB114403A2E5563F52C /* Shared */,
+				C0F1A2B3C4D5E6F708192A3C /* Config */,
+				D71BD8A0B6A6AA54EDBA6454 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D71BD8A0B6A6AA54EDBA6454 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				56276DD632C62329F6ADA69E /* KimRagRecorder.app */,
+				34A12B4316E0C7804F2E247E /* KimRagWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0F1A2B3C4D5E6F708192A3C /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C0F1A2B3C4D5E6F708192A3B /* Base.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8B151EF80197D866D8AAC4C /* KimRagRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3310DDD30EFB4A8C6AB9C189;
+			buildPhases = (
+				C5459B89CEFDD994ADAF9BE2 /* Sources */,
+				2985118D9DA11F5994ACC150 /* Frameworks */,
+				F631AA1EB59CA78A63BB2E35 /* Resources */,
+				3060E4059448A7D9FCC5FAD0 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A72EC9C8E41B0DCD5B470268 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4133148486FD3F88917196CC /* KimRagRecorder */,
+				5946ABB114403A2E5563F52C /* Shared */,
+			);
+			name = KimRagRecorder;
+			productName = KimRagRecorder;
+			productReference = 56276DD632C62329F6ADA69E /* KimRagRecorder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		090470DEBBEDF60952B5EEB7 /* KimRagWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C7F284098082A8FBCA82B83C;
+			buildPhases = (
+				E690F0892CF0B8F81AF5DBB4 /* Sources */,
+				B5D113CC477AFF6A2E38181A /* Frameworks */,
+				ECBA0A21B2B0BF6AE0756D45 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				62073C66595723C3FB02BE22 /* KimRagWidget */,
+				5946ABB114403A2E5563F52C /* Shared */,
+			);
+			name = KimRagWidget;
+			productName = KimRagWidget;
+			productReference = 34A12B4316E0C7804F2E247E /* KimRagWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD7512F5E0289CDDCE66B0F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A8B151EF80197D866D8AAC4C = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					090470DEBBEDF60952B5EEB7 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = B9EACD5B950CEA3A53B1A8E9;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 186495F7DA296BF880DF3A22;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D71BD8A0B6A6AA54EDBA6454 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8B151EF80197D866D8AAC4C /* KimRagRecorder */,
+				090470DEBBEDF60952B5EEB7 /* KimRagWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F631AA1EB59CA78A63BB2E35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECBA0A21B2B0BF6AE0756D45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5459B89CEFDD994ADAF9BE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E690F0892CF0B8F81AF5DBB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A72EC9C8E41B0DCD5B470268 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 090470DEBBEDF60952B5EEB7 /* KimRagWidget */;
+			targetProxy = B78CC6909042016DAAA04D83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		ADF824CAEF0CEF6B0E0F81DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F1A2B3C4D5E6F708192A3B /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				CODE_SIGN_STYLE = Automatic;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+			};
+			name = Debug;
+		};
+		0FE75A5189C2EA3F123621D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0F1A2B3C4D5E6F708192A3B /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				CODE_SIGN_STYLE = Automatic;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E182EBBC166D73366E798681 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.kimrag.recorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = Config/App-Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kim Rag";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				MARKETING_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1;
+				TARGETED_DEVICE_FAMILY = 1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		5B61A1B298A0D06EFA6933A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.kimrag.recorder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = Config/App-Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kim Rag";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				MARKETING_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1;
+				TARGETED_DEVICE_FAMILY = 1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		A8522B770693A6C14A26F3AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.kimrag.recorder.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = Config/Widget-Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kim Rag";
+				SKIP_INSTALL = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				MARKETING_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1;
+				TARGETED_DEVICE_FAMILY = 1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WIDGET_EXTENSION";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		F2B433F0C02F9AD9BE4E650D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_BUNDLE_IDENTIFIER = com.kim.kimrag.recorder.widget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = Config/Widget-Info.plist;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kim Rag";
+				SKIP_INSTALL = YES;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				MARKETING_VERSION = 1.1;
+				CURRENT_PROJECT_VERSION = 1;
+				TARGETED_DEVICE_FAMILY = 1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) WIDGET_EXTENSION";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9EACD5B950CEA3A53B1A8E9 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF824CAEF0CEF6B0E0F81DF /* Debug */,
+				0FE75A5189C2EA3F123621D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3310DDD30EFB4A8C6AB9C189 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E182EBBC166D73366E798681 /* Debug */,
+				5B61A1B298A0D06EFA6933A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C7F284098082A8FBCA82B83C = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8522B770693A6C14A26F3AE /* Debug */,
+				F2B433F0C02F9AD9BE4E650D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD7512F5E0289CDDCE66B0F8 /* Project object */;
+}
